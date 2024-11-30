@@ -1,0 +1,132 @@
+@model SalvandoHuellitas.ViewModels.NewPetViewModel
+
+@{
+    ViewBag.Title = "Registrar Mascota";
+}
+
+<p class="h2">
+    Registrar nueva mascota en adopción
+</p>
+
+<form asp-action="SaveNewPetService" method="post" enctype="multipart/form-data">
+    <div class="container">
+        <div class="row from-row-spacing flex-column flex-md-row">
+            <div class="col form-item">
+                <label asp-for="Nombre">Nombre de la mascota</label>
+                <input asp-for="Nombre" type="text" placeholder="Ingresar nombre" class="form-control"/>
+            </div>
+
+            <div class="col form-item">
+                <label asp-for="Edad">Edad de la mascota (edad en años)</label>
+                <input asp-for="Edad" type="number" min="0" max="99" pattern="\d*" oninput="validarEdad(this)" placeholder="Ingresar edad" class="form-control"/>
+            </div>
+        </div>
+
+        <div class="row from-row-spacing flex-column flex-md-row">
+            <div class="col form-item">
+                <label asp-for="Localizacion">Dirección de residencia de la mascota</label>
+                <input asp-for="Localizacion" type="text" placeholder="Ingresar dirección" class="form-control"/>
+            </div>
+
+            <div class="col form-item">
+                <label asp-for="Tamaño">Tamaño de la mascota</label>
+                <select asp-for="Tamaño" class="form-select">
+                    <option value="Grande">Grande</option>
+                    <option value="Mediano">Mediano</option>
+                    <option value="Pequeño">Pequeño</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row from-row-spacing flex-column flex-md-row">
+            <div class="col form-item">
+                <label asp-for="Tipo">Tipo de mascota (solo se permiten perros y gatos)</label>
+                <select asp-for="Tipo" class="form-select">
+                    <option value="Gato">Gato</option>
+                    <option value="Perro">Perro</option>
+                </select>
+            </div>
+
+            <div class="col form-item">
+                <label asp-for="Genero">Sexo de la mascota</label>
+                <select asp-for="Genero" class="form-select">
+                    <option value="Macho">Macho</option>
+                    <option value="Hembra">Hembra</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="col form-item from-row-spacing">
+            <label asp-for="SociableCon">La mascota es sociable con.. (niños, otras mascotas, etc)</label>
+            <textarea asp-for="SociableCon" rows="2" placeholder="Ingresar lista con quien es sociable la mascota" class="form-control"></textarea>
+        </div>
+
+        <div class="col form-item from-row-spacing">
+            <label asp-for="RequisitosAdopcion">Requisitos de adopción</label>
+            <textarea asp-for="RequisitosAdopcion" rows="4" placeholder="Detallas los requisitos para adopción" class="form-control"></textarea>
+        </div>
+
+        <div class="col form-item from-row-spacing">
+            <label asp-for="Descripcion">Descripción de la mascota</label>
+            <textarea asp-for="Descripcion" rows="4" placeholder="Ingresar descripción" class="form-control"></textarea>
+        </div>
+
+        <div class="col form-item from-row-spacing">
+            <label asp-for="Foto">Foto de la mascota</label>
+            <input asp-for="Foto" type="file" accept=".png" class="form-control" />
+            <img id="fotoPreview" src="#" alt="Vista previa de la foto" style="display:none; max-width: 200px; margin-top: 10px;" />
+        </div>
+        
+        <div id="validationSummary" asp-validation-summary="All" class="alert alert-danger" style="display:none;"></div>
+
+        <button type="submit" class="submit-button">Registar</button>
+    </div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+
+    <script>
+        function validarEdad(input) {
+            input.value = input.value.replace(/[^0-9]/g, '');
+            if (input.value < 0) {
+                input.value = 0;
+            }
+            if (input.value > 99) {
+                input.value = 99;
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const validationSummary = document.getElementById('validationSummary');
+            const form = document.querySelector('form');
+            const fotoInput = document.querySelector('input[name="Foto"]');
+            const fotoPreview = document.getElementById('fotoPreview');
+
+            fotoInput.addEventListener('change', function () {
+                const file = this.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = function (e) {
+                        fotoPreview.src = e.target.result;
+                        fotoPreview.style.display = 'block';
+                    }
+                    reader.readAsDataURL(file);
+                } else {
+                    fotoPreview.style.display = 'none';
+                }
+            });
+
+            form.addEventListener('submit', function (event) {
+                setTimeout(function () {
+                    if (validationSummary.innerHTML.trim() === '') {
+                        validationSummary.style.display = 'none';
+                    } else {
+                        validationSummary.style.display = 'block';
+                    }
+                }, 100);
+            });
+        });
+    </script>
+}
+

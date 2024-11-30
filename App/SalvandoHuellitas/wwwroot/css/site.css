@@ -1,0 +1,124 @@
+:root {
+  --white-color: #fff;
+  --error-color: #CB545B;
+  --space-cadet-color: #1E2952;
+  --hot-cinnamon-color: #DD6D25;
+  --gray-color: #808080;
+}
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.input-validation-error {
+  border: 1px solid var(--error-color);
+}
+
+.form-text-danger {
+    color: var(--error-color);
+}
+
+.submit-button, .main-button {
+  border-radius: 8px;
+  color: var(--white-color);
+  text-align: center;
+  transition: box-shadow 0.5s ease;
+  min-width: 12rem;
+  min-height: 2rem;
+  padding: 0.2rem;
+}
+
+.submit-button {
+  background-color: var(--space-cadet-color);
+  border: 1px solid var(--space-cadet-color);
+}
+
+.submit-button:hover {
+  box-shadow: 0 4px 8px rgba(30, 41, 82, 0.8);
+}
+
+.main-button {
+  background-color: var(--hot-cinnamon-color);
+  border: 1px solid var(--hot-cinnamon-color);
+}
+
+.main-button:hover {
+  box-shadow: 0 4px 8px rgba(221, 109, 37, 0.8);
+}
+
+.from-row-spacing {
+  margin-bottom: 1rem;
+}
+
+.disabled-button {
+  background-color: #ccc;
+  border: 1px solid #ccc;
+  cursor: not-allowed;
+}
+
+.pets-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  justify-content: space-between;
+}
+
+.pet-box {
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  border: 1px solid var(--hot-cinnamon-color);
+  box-sizing: border-box;
+}
+
+.pet-box img {
+  width: 260px;
+  height: 260px;
+}
+
+.pet-empty-img {
+    width: 260px;
+    height: 260px;
+    background-color: var(--gray-color);
+}
+
+.pet-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 6px;
+  padding: 12px;
+}

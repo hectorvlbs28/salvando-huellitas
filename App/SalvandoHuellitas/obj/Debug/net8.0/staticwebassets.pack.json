@@ -1,0 +1,305 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/obj/Debug/net8.0/scopedcss/projectbundle/SalvandoHuellitas.bundle.scp.css",
+      "PackagePath": "staticwebassets/SalvandoHuellitas.bundle.scp.css"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/css/site.css",
+      "PackagePath": "staticwebassets/css/site.css"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/images/31110d57-d72f-46d9-820f-86bd5d12417b.png",
+      "PackagePath": "staticwebassets/images/31110d57-d72f-46d9-820f-86bd5d12417b.png"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/images/466159754_1287578809256618_9144415368451649275_n.jpg",
+      "PackagePath": "staticwebassets/images/466159754_1287578809256618_9144415368451649275_n.jpg"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/images/Logo.svg",
+      "PackagePath": "staticwebassets/images/Logo.svg"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/images/perro.png",
+      "PackagePath": "staticwebassets/images/perro.png"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/images/pets/2fb0c223-a2bb-4510-abd4-ac4bc38d82a8.png",
+      "PackagePath": "staticwebassets/images/pets/2fb0c223-a2bb-4510-abd4-ac4bc38d82a8.png"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/images/pets/8b726eac-f7c4-4d87-bf09-17b3f31d62b6.png",
+      "PackagePath": "staticwebassets/images/pets/8b726eac-f7c4-4d87-bf09-17b3f31d62b6.png"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/images/pets/bd99beef-5bb1-4e47-88c1-5365f9ba9ce3.png",
+      "PackagePath": "staticwebassets/images/pets/bd99beef-5bb1-4e47-88c1-5365f9ba9ce3.png"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/images/pets/d2cc20f2-e542-416e-90c1-2a2cbb06f4b9.png",
+      "PackagePath": "staticwebassets/images/pets/d2cc20f2-e542-416e-90c1-2a2cbb06f4b9.png"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/images/pets/f8555d73-0216-4d70-bcaa-422172b02591.png",
+      "PackagePath": "staticwebassets/images/pets/f8555d73-0216-4d70-bcaa-422172b02591.png"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/images/pets/fef24d26-776e-4fb8-a829-be4044fbee30.png",
+      "PackagePath": "staticwebassets/images/pets/fef24d26-776e-4fb8-a829-be4044fbee30.png"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/js/site.js",
+      "PackagePath": "staticwebassets/js/site.js"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/bootstrap/LICENSE",
+      "PackagePath": "staticwebassets/lib/bootstrap"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css.map"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css.map"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js.map"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js.map"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js.map"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/jquery-validation/LICENSE.md",
+      "PackagePath": "staticwebassets/lib/jquery-validation/LICENSE.md"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.js"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.min.js"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.js"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.min.js"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/jquery/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/jquery/dist/jquery.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.js"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/jquery/dist/jquery.min.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.js"
+    },
+    {
+      "Id": "/Users/villalobos/Desktop/dev files/pds2/salvando huellitas/SalvandoHuellitas/SalvandoHuellitas/wwwroot/lib/jquery/dist/jquery.min.map",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.SalvandoHuellitas.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.SalvandoHuellitas.props",
+      "PackagePath": "build\\SalvandoHuellitas.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.SalvandoHuellitas.props",
+      "PackagePath": "buildMultiTargeting\\SalvandoHuellitas.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.SalvandoHuellitas.props",
+      "PackagePath": "buildTransitive\\SalvandoHuellitas.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

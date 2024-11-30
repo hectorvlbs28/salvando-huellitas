@@ -1,0 +1,147 @@
+@model SalvandoHuellitas.ViewModels.PetEditViewModel
+
+@{
+    ViewBag.Title = "Editar Mascota";
+}
+
+<p class="h2">
+    Editar información de la mascota
+</p>
+
+<form asp-action="UpdatePet" method="post" class="mb-4 mt-4">
+    <input type="hidden" asp-for="Id" />
+    <div class="container">
+        <div class="row from-row-spacing flex-column flex-md-row">
+            <div class="col form-item">
+                <label asp-for="Nombre">Nombre de la mascota</label>
+                <input asp-for="Nombre" type="text" placeholder="Ingresar nombre" class="form-control"/>
+            </div>
+
+            <div class="col form-item">
+                <label asp-for="Edad">Edad de la mascota (edad en años)</label>
+                <input asp-for="Edad" type="number" min="0" max="99" pattern="\d*" oninput="validarEdad(this)" placeholder="Ingresar edad" class="form-control"/>
+            </div>
+        </div>
+
+        <div class="row from-row-spacing flex-column flex-md-row">
+            <div class="col form-item">
+                <label asp-for="Localizacion">Dirección de residencia de la mascota</label>
+                <input asp-for="Localizacion" type="text" placeholder="Ingresar dirección" class="form-control"/>
+            </div>
+
+            <div class="col form-item">
+                <label asp-for="Tamaño">Tamaño de la mascota</label>
+                <select asp-for="Tamaño" class="form-select">
+                    <option value="Grande">Grande</option>
+                    <option value="Mediano">Mediano</option>
+                    <option value="Pequeño">Pequeño</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row from-row-spacing flex-column flex-md-row">
+            <div class="col form-item">
+                <label asp-for="Tipo">Tipo de mascota (solo se permiten perros y gatos)</label>
+                <select asp-for="Tipo" class="form-select">
+                    <option value="Gato">Gato</option>
+                    <option value="Perro">Perro</option>
+                </select>
+            </div>
+
+            <div class="col form-item">
+                <label asp-for="Genero">Sexo de la mascota</label>
+                <select asp-for="Genero" class="form-select">
+                    <option value="Macho">Macho</option>
+                    <option value="Hembra">Hembra</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="col form-item from-row-spacing">
+            <label asp-for="SociableCon">La mascota es sociable con.. (niños, otras mascotas, etc)</label>
+            <textarea asp-for="SociableCon" rows="2" placeholder="Ingresar lista con quien es sociable la mascota" class="form-control"></textarea>
+        </div>
+
+        <div class="col form-item from-row-spacing">
+            <label asp-for="RequisitosAdopcion">Requisitos de adopción</label>
+            <textarea asp-for="RequisitosAdopcion" rows="4" placeholder="Detallas los requisitos para adopción" class="form-control"></textarea>
+        </div>
+
+        <div class="col form-item from-row-spacing">
+            <label asp-for="Descripcion">Descripción de la mascota</label>
+            <textarea asp-for="Descripcion" rows="4" placeholder="Ingresar descripción" class="form-control"></textarea>
+        </div>
+
+        <div class="col form-item from-row-spacing">
+            <label asp-for="Adoptado" class="control-label"></label>
+            <input asp-for="Adoptado" type="checkbox" class="form-check-input" />
+            <span asp-validation-for="Adoptado" class="text-danger"></span>
+        </div>
+
+        <div class="col form-item from-row-spacing">
+            @if (Model.Adoptado)
+            {
+                <p class="text-success">Mascota adoptada</p>
+            }
+            else
+            {
+                <p class="text-warning">Mascota disponible para adopción</p>
+            }
+        </div>
+
+        <div id="validationSummary" asp-validation-summary="All" class="alert alert-danger" style="display:none;"></div>
+
+        <button type="button" class="main-button" onclick="history.back()">Regresar</button>
+        <button type="submit" class="submit-button disabled-button" id="updateButton" disabled>Actualizar</button>
+    </div>
+</form>
+
+<div>
+    <h3>Usuarios que solicitaron adoptar esta mascota.</h3>
+    
+    <ul>
+        @foreach (var user in Model.Usuarios)
+        {
+            <li>@user.Nombre (@user.Email)</li>
+        }
+    </ul>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const validationSummary = document.getElementById('validationSummary');
+            const form = document.querySelector('form');
+            const updateButton = document.getElementById('updateButton');
+
+            const originalData = new FormData(form);
+
+            form.addEventListener('input', function () {
+                const currentData = new FormData(form);
+                let isChanged = false;
+
+                for (let [key, value] of originalData.entries()) {
+                    if (currentData.get(key) !== value) {
+                        isChanged = true;
+                        break;
+                    }
+                }
+
+                updateButton.disabled = !isChanged;
+                updateButton.classList.toggle('disabled-button', !isChanged);
+            });
+
+            form.addEventListener('submit', function (event) {
+                setTimeout(function () {
+                    if (validationSummary.innerHTML.trim() === '') {
+                        validationSummary.style.display = 'none';
+                    } else {
+                        validationSummary.style.display = 'block';
+                    }
+                }, 100);
+            });
+        });
+    </script>
+}

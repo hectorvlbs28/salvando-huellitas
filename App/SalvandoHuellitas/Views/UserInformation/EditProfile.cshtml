@@ -1,0 +1,66 @@
+@model SalvandoHuellitas.ViewModels.EditProfileModel
+
+@{
+    ViewData["Title"] = "Editar Perfil";
+}
+
+<p class="h2">
+    Editar información de perfil
+</p>
+
+<form asp-action="UpdateProfile" method="post">
+    <div class="container">
+        <div class="col form-item from-row-spacing">
+            <label asp-for="Nombre">Nombre</label>
+            <input asp-for="Nombre" type="text" placeholder="Ingresar nombre" class="form-control"/>
+        </div>
+
+        <div class="col form-item from-row-spacing">
+            <label asp-for="Telefono">Teléfono</label>
+            <input asp-for="Telefono" type="text" placeholder="Ingresar numero telefonico" class="form-control"/>
+        </div>
+
+        <div id="validationSummary" asp-validation-summary="All" class="alert alert-danger" style="display:none;"></div>
+
+        <button type="button" class="main-button" onclick="window.history.back()">Cancelar</button>
+        <button type="submit" class="submit-button disabled-button" id="saveButton" disabled>Guardar cambios</button>
+    </div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const validationSummary = document.getElementById('validationSummary');
+            const form = document.querySelector('form');
+            const saveButton = document.getElementById('saveButton');
+            const originalData = new FormData(form);
+
+            form.addEventListener('input', function () {
+                const currentData = new FormData(form);
+                let isChanged = false;
+
+                for (let [key, value] of originalData.entries()) {
+                    if (currentData.get(key) !== value) {
+                        isChanged = true;
+                        break;
+                    }
+                }
+
+                saveButton.disabled = !isChanged;
+                saveButton.classList.toggle('disabled-button', !isChanged);
+            });
+
+            form.addEventListener('submit', function (event) {
+                setTimeout(function () {
+                    if (validationSummary.innerHTML.trim() === '') {
+                        validationSummary.style.display = 'none';
+                    } else {
+                        validationSummary.style.display = 'block';
+                    }
+                }, 100);
+            });
+        });
+    </script>
+}

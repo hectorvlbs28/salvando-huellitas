@@ -1,0 +1,44 @@
+@model IEnumerable<SalvandoHuellitas.Models.Mascota>
+
+@{
+    ViewBag.Title = "Lista de Mascotas Disponibles";
+}
+
+<h2>Lista de Mascotas Disponibles</h2>
+
+@if (!Model.Any())
+{
+    <p>No hay mascotas disponibles en este momento.</p>
+}
+else
+{
+    <div class="pets-container">
+        @foreach (var mascota in Model)
+        {
+            <div class="pet-box">
+                <div class="">
+                    @if (mascota.Fotos.Any())
+                    {
+                        <img src="@mascota.Fotos.First().Url" alt="Foto de @mascota.Nombre" class="img-thumbnail"/>
+                    }
+                    else
+                    {
+                        <div class="img-thumbnail pet-empty-img"></div>
+                    }
+                </div>
+
+                <div class="pet-info">
+                    <span>Nombre: @mascota.Nombre</span>
+                    <span>Edad: @mascota.Edad años</span>
+                    <span>Tipo: @mascota.Tipo</span>
+                    <span>Sexo: @mascota.Genero</span>
+
+                    <form asp-action="PetDetails" asp-controller="Pets" method="get" class="w-100">
+                        <input type="hidden" name="id" value="@mascota.Id"/>
+                        <button type="submit" class="main-button w-100">Ver detalles</button>
+                    </form>
+                </div>
+            </div>
+        }
+    </div>
+}

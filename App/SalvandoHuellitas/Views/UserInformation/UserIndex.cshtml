@@ -1,0 +1,85 @@
+@model SalvandoHuellitas.ViewModels.MyProfileViewModel
+
+@{
+    ViewData["Title"] = "Mi Perfil";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Información del Usuario</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">@Model.Nombre</h6>
+                    <p class="card-text">Email: @Model.Email</p>
+                    <p class="card-text">Teléfono: @Model.Telefono</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Opciones</h5>
+
+                    <form id="logoutForm" asp-area="" asp-controller="Account" asp-action="Logout" method="post" class="form-inline">
+                        <button type="submit" class="main-button">Cerrar sesión</button>
+                    </form>
+
+                    <form asp-action="EditProfile" asp-controller="UserInformation" method="get">
+                        <button type="submit" class="main-button mt-2">Editar Perfil</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Mis mascotas</h5>
+
+                    @if (!Model.Mascotas.Any())
+                    {
+                        <p class="card-text">No se ha registrado ninguna mascota.</p>
+                    }
+                    else
+                    {
+                        
+                        <p class="card-text">Número de mascotas registradas: @Model.Mascotas.Count</p>
+                        
+                        <div class="pets-container">
+                            @foreach (var mascota in Model.Mascotas)
+                            {
+                                <div class="pet-box">
+                                    <div class="">
+                                        @if (mascota.Fotos.Any())
+                                        {
+                                            <img src="@mascota.Fotos.First().Url" alt="Foto de @mascota.Nombre" class="img-thumbnail"/>
+                                        }
+                                        else
+                                        {
+                                            <div class="img-thumbnail pet-empty-img"></div>
+                                        }
+                                    </div>
+
+                                    <div class="pet-info">
+                                        <span>Nombre: @mascota.Nombre</span>
+
+                                        <span>Estado: @((mascota.Adoptado) ? "Adoptado" : "No adoptado")</span>
+                                        
+                                        <form asp-action="EditPet" asp-controller="Pets" method="get" class="w-100">
+                                            <input type="hidden" name="id" value="@mascota.Id" />
+                                            <button type="submit" class="main-button w-100">Ver detalles</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
